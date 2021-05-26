@@ -1,4 +1,4 @@
-const key = "476d30e25989ad0a6a8102a5924b4752" //process.env.REACT_APP_WEATHER_API_KEY;
+const key = process.env.REACT_APP_WEATHER_API_KEY
 if (key === undefined) {
   throw new Error('No Open Weather API Key defined - ensure you set a variable called REACT_APP_WEATHER_API_KEY')
 }

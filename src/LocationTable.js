@@ -11,8 +11,8 @@ export const LocationTable = ({locationsProp, currentProp, onSelect}) => {
           </tr>
           </thead>
           <tbody>
-            {locationsProp.map((location) => 
-                <tr className={currentProp?.id === location.id ? 'table-primary' : ''}
+            {locationsProp.map((location, index) => 
+                <tr key={index} className={currentProp?.id === location.id ? 'table-primary' : ''}
                     onClick={() => onSelect(location)}
                 >
                     <td>{location.name}</td>
