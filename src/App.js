@@ -32,6 +32,9 @@ function App() {
 
   return (
     <div className="container">
+      <br />
+      <br />
+      <br />
       <h1>Weather App</h1>
       
       <LocationSearch onSearchProp={onSearch} />
